@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TedsWoodworking Review — 16,000+ Woodworking Plans & Blueprints</title>
+  <meta name="description" content="Independent review of TedsWoodworking: overview of plans, blueprints, pricing structure, refund policy, and official access details." />
+  <style>
+    :root {
+      --bg: #f8f6f2;
+      --surface: #ffffff;
+      --text: #1c1b18;
+      --muted: #5c5850;
+      --accent: #7c4a1d;
+      --accent-dark: #5c3512;
+      --border: #e5dfd5;
+      --soft: #f2ede4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 64px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-size: 0.96rem;
+      transition: background 0.15s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-sm {
+      padding: 9px 15px;
+      font-size: 0.88rem;
+    }
+
+    .hero {
+      padding: 52px 0 40px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--accent-dark);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.85rem, 3.6vw, 2.6rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.04rem;
+      margin-bottom: 22px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .note-inline {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .card h2, .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .spec-list {
+      list-style: none;
+    }
+
+    .spec-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.94rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .spec-list li:last-child {
+      border-bottom: none;
+    }
+
+    section {
+      padding: 28px 0;
+    }
+
+    .section-title {
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    ul.clean-list {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    ul.clean-list li {
+      margin-bottom: 8px;
+    }
+
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .disclosure {
+      background: var(--soft);
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 36px;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .legal-block {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+
+    .legal-block h4 {
+      color: var(--text);
+      font-size: 0.92rem;
+      margin: 12px 0 6px;
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">Pro Wood Plans Review</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#whats-included">What's Included</a>
+        <a href="#who-its-for">Who It Fits</a>
+        <a href="#legal">Policies</a>
+      </nav>
+      <a class="btn btn-sm" href="https://dbbc5kri2c7m5mfdi23kuzpq49.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">
+        Visit Official Page
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Independent Product Overview</span>
+          <h1>TedsWoodworking Review: What Is Inside &amp; How It Works</h1>
+          <p class="lead">
+            A clear look at TedsWoodworking—a digital library of step-by-step woodworking plans, diagrams, and cut lists—so you can decide whether it fits your workshop projects.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="https://dbbc5kri2c7m5mfdi23kuzpq49.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">
+              Go to Official TedsWoodworking Site
+            </a>
+            <span class="note-inline">Opens on the official checkout/info page</span>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2>Quick Snapshot</h2>
+          <ul class="spec-list">
+            <li><span>Format</span><strong>Digital Plans &amp; Diagrams</strong></li>
+            <li><span>Project Count</span><strong>16,000+ Plans (per vendor)</strong></li>
+            <li><span>Skill Level</span><strong>Beginner to Experienced</strong></li>
+            <li><span>Guarantee</span><strong>60-Day Vendor Refund Policy</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <h2 class="section-title">Product Overview</h2>
+        <div class="card">
+          <p>
+            TedsWoodworking is a large collection of downloadable woodworking blueprints designed to help hobbyists and makers plan cuts, estimate materials, and assemble projects without figuring out measurements from scratch. Rather than sending physical lumber or tools, access is delivered digitally through the official vendor portal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="whats-included">
+      <div class="container">
+        <h2 class="section-title">What Is Typically Included</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Step-by-Step Blueprints</h3>
+            <p class="note-inline" style="font-size: 0.94rem;">
+              Structured project guides covering furniture, sheds, outdoor builds, shop jigs, and small crafts.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Materials &amp; Cut Lists</h3>
+            <p class="note-inline" style="font-size: 0.94rem;">
+              Dimensions and part lists intended to reduce guesswork when buying boards and hardware.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Digital Access &amp; Updates</h3>
+            <p class="note-inline" style="font-size: 0.94rem;">
+              Member-area access to browse and download plans, subject to the terms set on the vendor's official page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who-its-for">
+      <div class="container">
+        <h2 class="section-title">Pros &amp; Practical Considerations</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Where It Helps</h3>
+            <ul class="clean-list">
+              <li>Large variety of project ideas in one searchable place.</li>
+              <li>Clearer starting point for beginners who want guided steps.</li>
+              <li>Digital delivery means immediate access after vendor checkout.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Things to Keep in Mind</h3>
+            <ul class="clean-list">
+              <li>You still supply your own tools, wood, safety gear, and time.</li>
+              <li>Large plan libraries require filtering to find your exact style.</li>
+              <li>Pricing, bonuses, and refund terms are governed by the official vendor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2 style="font-size: 1.25rem; margin-bottom: 6px;">Want to inspect full details and current offers?</h2>
+            <p class="note-inline" style="font-size: 0.92rem;">
+              Review the official TedsWoodworking page directly to verify current pricing, inclusions, and terms.
+            </p>
+          </div>
+          <a class="btn" href="https://dbbc5kri2c7m5mfdi23kuzpq49.hop.clickbank.net" rel="nofollow sponsored noopener" target="_blank">
+            View Official Offer
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="disclosure">
+          <strong>Affiliate Disclosure:</strong> Pro Wood Plans Review is an independent informational page and may earn a commission when you click a link on this site and complete a purchase on the official vendor's website, at no extra cost to you. Individual project results depend on your skill, tools, and effort.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="legal">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <strong>Pro Wood Plans Review</strong><br />
+          Contact: <a href="mailto:audiovate9@gmail.com" style="text-decoration: underline;">audiovate9@gmail.com</a>
+        </div>
+        <div class="footer-links">
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="#terms-of-use">Terms of Use</a>
+          <a href="#disclaimer">Disclaimer</a>
+        </div>
+      </div>
+
+      <div class="legal-block">
+        <h4 id="privacy-policy">Privacy Policy</h4>
+        <p>
+          This informational page does not directly collect sensitive personal data through forms. Standard web server or analytics logs (such as browser type, referral URL, and approximate region) may be processed to maintain site reliability and measure traffic. If you contact us via email, your message is used solely to reply to your inquiry.
+        </p>
+
+        <h4 id="terms-of-use">Terms of Use</h4>
+        <p>
+          Content on this site is provided for general informational purposes only. By browsing this page, you agree not to misuse or copy site materials unlawfully. Purchases, billing, and digital delivery occur on third-party websites and are subject to their respective terms.
+        </p>
+
+        <h4 id="disclaimer">Disclaimer</h4>
+        <p>
+          This site is not affiliated with, endorsed by, or an official representative of the product creator unless explicitly stated. Any product names, logos, and trademarks belong to their respective owners. Woodworking involves power tools and physical materials—always follow proper safety practices.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
